@@ -10,6 +10,7 @@ MIND — O Desafio da Inteligência Artificial
 
 - Nome 1: Pedro Henrique Rocha de Souza
 - Nome 2: Crystian Marcondes Oliveira Nascimento
+- Nome 3:Fabrício Félix Gomes
 
 ## 3. Tema escolhido
 
