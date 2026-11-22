@@ -1,3 +1,11 @@
+# ==============================================================================
+# ARQUIVO: src/funcoes.py
+# O QUE FAZ: Contém funções utilitárias gerais para cálculos de pontuação, gerenciamento
+#            de vida, limitação de valores (clamp) e verificação de colisão geométrica.
+# ESTÁ LINCADO COM:
+#   - Funções de suporte genéricas que podem ser utilizadas em módulos de lógica ou testes.
+# ==============================================================================
+
 def calcular_pontos(pontos_atual, pontos_ganhos):
     """Soma os pontos ganhos à pontuação atual."""
     return pontos_atual + pontos_ganhos

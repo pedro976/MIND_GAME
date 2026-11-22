@@ -1,3 +1,12 @@
+# ==============================================================================
+# ARQUIVO: src/sprites.py
+# O QUE FAZ: Função utilitária para manipulação de assets gráficos em formato BMP.
+#            Carrega spritesheets, extrai recortes específicos e aplica transparência
+#            baseada em cor (colorkey) e redimensionamento.
+# ESTÁ LINCADO COM:
+#   - assets/imagens/spritesheet.bmp (fonte do gráfico)
+# ==============================================================================
+
 import pygame
             
 def pegar_sprite(local_arquivo, x, y, width, height, scale=1):
