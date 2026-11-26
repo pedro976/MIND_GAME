@@ -117,7 +117,7 @@ O jogador perde quando as três vidas acabam antes de concluir todas as pergunta
 A versão final do MIND deverá ter:
 
 - tela inicial;
-- sequência de pelo menos dez perguntas sobre IA, com três alternativas cada;
+- sequência de trinta perguntas sobre IA, com três alternativas cada;
 - sistema de pontuação e três vidas;
 - aviso de resposta correta ou incorreta, com explicação educativa após cada resposta;
 - condições de vitória e derrota, com tela final de resultado e opção de jogar novamente;
@@ -135,19 +135,21 @@ A versão final do MIND deverá ter:
 
 ---
 
-## 15. Organização inicial do código
+## 15. Organização do código
 
-O projeto parte do template oficial da disciplina e mantém sua estrutura de pastas. O código será organizado em módulos:
+O projeto parte do template oficial da disciplina e mantém sua estrutura de pastas. O código está organizado em módulos:
 
 - `main.py`: ponto de entrada, que inicia o jogo.
 - `src/jogo.py`: loop principal, telas e interface gráfica.
-- `src/funcoes.py`: regras do jogo, como pontuação, vidas, avaliação da resposta e condições de vitória e derrota.
-- `src/perguntas.py`: perguntas, alternativas e explicações.
+- `src/logic.py`: regras principais do jogo (avaliação da resposta, pontuação por dificuldade, vidas e condições de vitória e derrota).
+- `src/funcoes.py`: funções auxiliares gerais mantidas da estrutura inicial do template.
+- `src/questions.py`: banco com 30 perguntas, alternativas, categorias, dificuldades e explicações.
 - `src/dados.py`: leitura e escrita do recorde em arquivo.
 - `src/config.py`: constantes (tela, cores, caminhos de arquivos).
-- `tests/test_logica.py`: testes automatizados das funções de lógica.
+- `src/sprites.py`: utilitário de recorte de spritesheet mantido do template.
+- `tests/test_logica.py`: testes automatizados das regras de lógica, persistência, caminhos e banco de perguntas.
 - `docs/`: proposta e documentação do projeto.
-- `assets/` e `data/`: recursos visuais e arquivos de dados, conforme o template.
+- `assets/` e `data/`: recursos visuais do template e arquivos de dados (`data/recorde.txt`).
 
 ## 16. Estruturas de dados previstas
 

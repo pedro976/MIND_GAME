@@ -9,6 +9,10 @@
 #   - assets/imagens/spritesheet.bmp (recurso gráfico do jogo)
 # ==============================================================================
 
+import os
+
+PASTA_PROJETO = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+
 LARGURA_TELA = 800
 ALTURA_TELA = 600
 FPS = 60
@@ -25,6 +29,6 @@ VERDE_ACERTO = (46, 139, 87)
 VERMELHO_ERRO = (178, 34, 34)
 AMARELO_DESTAQUE = (255, 215, 0)
 
-CAMINHO_RECORDE = "data/recorde.txt"
-CAMINHO_SPRITES = "assets/imagens/spritesheet.bmp"
+CAMINHO_RECORDE = os.path.join(PASTA_PROJETO, "data", "recorde.txt")
+CAMINHO_SPRITES = os.path.join(PASTA_PROJETO, "assets", "imagens", "spritesheet.bmp")
 
