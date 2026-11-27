@@ -1,8 +1,21 @@
 # ==============================================================================
 # ARQUIVO: src/questions.py
-# ... (header mantido)
+# O QUE FAZ: Armazena o banco de 30 perguntas do jogo MIND sobre Inteligência
+#            Artificial no cotidiano, com alternativas, resposta correta e explicação.
+# ESTÁ LINCADO COM:
+#   - src/jogo.py (lê a lista PERGUNTAS para exibir cada rodada e o feedback)
+#   - src/logic.py (valida a resposta usando a chave 'correta' e calcula pontos pela 'dificuldade')
+#   - tests/test_logica.py (verifica se todas as perguntas seguem a estrutura esperada)
 # ==============================================================================
 
+# Lista de dicionários onde cada item representa uma pergunta completa do quiz:
+# - id: identificador sequencial da pergunta (1 a 30)
+# - enunciado: texto da situação/pergunta exibido ao jogador
+# - alternativas: lista com exatamente 3 opções de resposta
+# - correta: índice (0, 1 ou 2) da opção correta dentro de 'alternativas'
+# - categoria: tema abordado (ex.: Privacidade, Ética, Segurança)
+# - dificuldade: nível ('Fácil', 'Média' ou 'Difícil') que define a pontuação
+# - explicacao: texto educativo mostrado na tela de feedback após a resposta
 PERGUNTAS = [
     {
         'alternativas': [
